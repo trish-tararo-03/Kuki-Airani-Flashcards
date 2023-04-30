@@ -95,6 +95,36 @@ const daysOfWeekCards = [
     },
   },
 ]
+
+const bodyPartsCards = [
+  {
+    section: {
+      english: 'Parts of the Body',
+      teReo: "Au Mero 'Ō Te Kōpapa",
+    },
+    cards: [
+      {
+        question: 'Head',
+        answer: 'Katu',
+      },
+    ],
+  },
+]
+// const meetAndGreetCards = [
+//   {
+//     section: {
+//       english: 'Meet and Greet',
+//       teReo: "Au Tū 'Ārāvei'anga"
+//     },
+//     cards:[
+//       {
+//         engQuestion: 'How are you?',
+//         teReoQuestion: "Pē'ea koe?",
+//         engAnswer: 'Great!',
+//       }
+//     ]
+//   }
+// ]
 const flashcardData = {
   months: monthsCards,
   daysOfWeek: daysOfWeekCards,
