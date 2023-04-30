@@ -1,4 +1,5 @@
 import React from 'react'
+import flashcardData from '../data/flashcardData'
 
 export default function Home() {
   return (
