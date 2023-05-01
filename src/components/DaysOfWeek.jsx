@@ -4,8 +4,7 @@ import { Flipper, Flipped } from 'react-flip-toolkit'
 import flashcardData from '../data/flashcardData'
 export default function DaysOfWeek() {
   // console.log('HERE', flashcardData)
-
-  const [isFlipped, setIsFlipped] = useState(false)
+  // const [isFlipped, setIsFlipped] = useState(false)
   const [flippedCards, setFlippedCards] = useState([])
 
   const toggleFlip = (id) => {

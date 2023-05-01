@@ -1,6 +1,7 @@
 const monthsCards = [
   {
     section: {
+      id: 1,
       english: 'Months of the Year',
       teReo: "Te Au Marama ō te Mata'iti",
       cards: [
@@ -60,6 +61,7 @@ const monthsCards = [
 const daysOfWeekCards = [
   {
     section: {
+      id: 2,
       english: 'Days of the Week',
       teReo: "Au rā o te 'epetoma",
       cards: [
@@ -103,50 +105,107 @@ const daysOfWeekCards = [
   },
 ]
 
+//id: 3
 const bodyPartsCards = [
   {
     section: {
+      id: 3,
       english: 'Parts of the Body',
       teReo: "Au Mero 'Ō Te Kōpapa",
     },
     cards: [
       {
+        id: 1,
         question: 'Head',
         answer: 'Katu',
       },
       {
+        id: 2,
         question: 'Neck',
         answer: 'Kakī',
       },
       {
+        id: 3,
         question: 'Eye',
         answer: 'Mata',
       },
       {
+        id: 4,
         question: 'Mouth',
         answer: "Va'a",
+      },
+      {
+        id: 5,
+        question: 'Ear',
+        answer: 'Taringa',
+      },
+      {
+        id: 6,
+        question: 'Hand',
+        answer: 'Rima',
+      },
+      {
+        id: 7,
+        question: 'Leg',
+        answer: 'Vaevae',
       },
     ],
   },
 ]
-// const meetAndGreetCards = [
-//   {
-//     section: {
-//       english: 'Meet and Greet',
-//       teReo: "Au Tū 'Ārāvei'anga"
-//     },
-//     cards:[
-//       {
-//         engQuestion: 'How are you?',
-//         teReoQuestion: "Pē'ea koe?",
-//         engAnswer: 'Great!',
-//       }
-//     ]
-//   }
-// ]
+
+//id: 4
+const meetAndGreetCards = [
+  {
+    section: {
+      id: 4,
+      english: 'Meet and Greet',
+      teReo: "Au Tū 'Ārāvei'anga",
+    },
+    cards: [
+      {
+        id: 1,
+        engQuestion: 'How are you?',
+        teReoAnswer: "Pē'ea koe?",
+      },
+      {
+        id: 2,
+        engQuestion: "I'm good thank you",
+        teReoAnswer: "Meitaki 'ua au",
+      },
+      {
+        id: 3,
+        engQuestion: 'What is your name?',
+        teReoAnswer: "Ko'ai tō'ou ingoa?",
+      },
+      {
+        id: 4,
+        engQuestion: 'My name is ______?',
+        teReoAnswer: 'Ko ______ tokū ingoa',
+      },
+      {
+        id: 5,
+        engQuestion: 'Where are you from?',
+        teReoAnswer: "Nō'ea mai koe?",
+      },
+      {
+        id: 6,
+        engQuestion: 'Where are you going?',
+        teReoAnswer: "Ka 'aere koe ki 'ea?",
+      },
+      {
+        id: 7,
+        engQuestion: 'Pleased to meet you',
+        teReoAnswer: "Mataora i te 'āravei 'iā koe",
+      },
+    ],
+  },
+]
+
 const flashcardData = {
   months: monthsCards,
   daysOfWeek: daysOfWeekCards,
+  bodyParts: bodyPartsCards,
+  meetAndGreet: meetAndGreetCards,
 }
 
 export default flashcardData
