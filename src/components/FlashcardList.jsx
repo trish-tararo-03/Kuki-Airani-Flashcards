@@ -1,56 +1,35 @@
-import React, { useState } from 'react'
-import Flashcard from './Flashcard'
+import React from 'react'
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 import flashcardData from '../data/flashcardData'
+import MonthsOfYear from './MonthsOfYear'
+import DaysOfWeek from './DaysOfWeek'
+import Navigation from './Navigation'
+import Home from './Home'
 
 const FlashcardList = () => {
-  const [flippedCards, setFlippedCards] = useState({})
-
-  const toggleFlip = (sectionId, cardId) => {
-    setFlippedCards((prevFlippedCards) => {
-      const sectionFlippedCards = { ...(prevFlippedCards[sectionId] || {}) }
-      const isFlipped = sectionFlippedCards[cardId]
-      sectionFlippedCards[cardId] = !isFlipped
-      return { ...prevFlippedCards, [sectionId]: sectionFlippedCards }
-    })
-  }
-
-  const renderSections = () =>
-    flashcardData.sections.map((section) => {
-      const sectionId = section.id
-      const cards = section.cards
-      const sectionFlippedCards = flippedCards[sectionId] || {}
-
-      return (
-        <div key={sectionId}>
-          <h2 className="text-center text-xl font-bold mb-4">
-            {section.english}
-          </h2>
-          <h2 className="text-xl text-center font-bold mb-4">
-            {section.teReo}
-          </h2>
-          <div>
-            {cards.map((card) => (
-              <Flashcard
-                key={card.question}
-                question={card.question}
-                answer={card.answer}
-                isFlipped={sectionFlippedCards[card.question] || false}
-                toggleFlip={() => toggleFlip(sectionId, card.question)}
-              />
-            ))}
-          </div>
-        </div>
-      )
-    })
-
   return (
-    <div className="flex flex-col items-center mt-8">
-      <h2 className="text-2xl font-bold mb-4">Kuki Cards</h2>
-
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-        {renderSections()}
+    <Router>
+      <div className="flex flex-col items-center mt-8">
+        <h2 className="text-2xl font-bold mb-4">Kuki Cards</h2>
       </div>
-    </div>
+
+      <div>
+        <Navigation />
+      </div>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route
+          path="/months"
+          element={<MonthsOfYear sections={flashcardData.sections} />}
+        />
+
+        <Route
+          path="/days-of-week"
+          element={<DaysOfWeek sections={flashcardData.sections} />}
+        />
+      </Routes>
+    </Router>
   )
 }
 

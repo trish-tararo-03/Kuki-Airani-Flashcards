@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Flashcard from './Flashcard'
 
-const DaysOfWeek = ({ sections }) => {
+const MonthsOfTheYear = ({ sections }) => {
   const [flippedCards, setFlippedCards] = useState({})
 
   const toggleFlip = (section, card) => {
@@ -13,7 +13,7 @@ const DaysOfWeek = ({ sections }) => {
     })
   }
 
-  const section = sections.find((section) => section.id === 2) // Assuming the sectionId for MonthsOfTheYear is 1
+  const section = sections.find((section) => section.id === 1) // Assuming the sectionId for MonthsOfTheYear is 1
   const cards = section.cards
   const sectionFlippedCards = flippedCards[section.id] || {}
 
@@ -36,4 +36,4 @@ const DaysOfWeek = ({ sections }) => {
   )
 }
 
-export default DaysOfWeek
+export default MonthsOfTheYear
