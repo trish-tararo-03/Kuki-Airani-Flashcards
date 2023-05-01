@@ -64,30 +64,37 @@ const daysOfWeekCards = [
       teReo: "Au rā o te 'epetoma",
       cards: [
         {
+          id: 1,
           question: 'Monday',
           answer: 'Monitē',
         },
         {
+          id: 2,
           question: 'Tuesday',
           answer: "Ru'irua",
         },
         {
+          id: 3,
           question: 'Wednesday',
           answer: "Ru'itoru",
         },
         {
+          id: 4,
           question: 'Thursday',
           answer: 'Paraparau',
         },
         {
+          id: 5,
           question: 'Friday',
           answer: 'Varaire',
         },
         {
+          id: 6,
           question: 'Saturday',
           answer: "Ma'anākai",
         },
         {
+          id: 7,
           question: 'Sunday',
           answer: 'Tāpati',
         },
@@ -106,6 +113,18 @@ const bodyPartsCards = [
       {
         question: 'Head',
         answer: 'Katu',
+      },
+      {
+        question: 'Neck',
+        answer: 'Kakī',
+      },
+      {
+        question: 'Eye',
+        answer: 'Mata',
+      },
+      {
+        question: 'Mouth',
+        answer: "Va'a",
       },
     ],
   },
