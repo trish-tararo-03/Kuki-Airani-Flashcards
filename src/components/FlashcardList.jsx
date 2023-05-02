@@ -6,6 +6,7 @@ import DaysOfWeek from './DaysOfWeek'
 import Navigation from './Navigation'
 import BodyParts from './BodyParts'
 import MeetAndGreet from './MeetAndGreet'
+import Phrases from './Phrases'
 import Home from './Home'
 
 const FlashcardList = () => {
@@ -33,6 +34,11 @@ const FlashcardList = () => {
         <Route
           path="/meet-and-greet"
           element={<MeetAndGreet sections={flashcardData.sections} />}
+        />
+
+        <Route
+          path="/phrases"
+          element={<Phrases sections={flashcardData.sections} />}
         />
       </Routes>
     </Router>

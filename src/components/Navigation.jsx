@@ -38,6 +38,12 @@ const Navigation = () => {
             >
               Greetings
             </Link>
+            <Link
+              to="/phrases"
+              className="text-secondary hover:bg-green px-3 py-2 rounded-md text-sm font-medium"
+            >
+              Phrases
+            </Link>
             {/* Add more navigation links as needed */}
           </div>
         </div>

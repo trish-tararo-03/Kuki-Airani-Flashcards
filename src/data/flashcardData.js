@@ -105,7 +105,7 @@ const flashcardData = {
         {
           id: 1,
           question: 'Head',
-          answer: 'Katu',
+          answer: 'Ūpoko',
         },
         {
           id: 2,
@@ -136,6 +136,16 @@ const flashcardData = {
           id: 7,
           question: 'Leg',
           answer: 'Vaevae',
+        },
+        {
+          id: 8,
+          question: 'Foot',
+          answer: 'Tapuae',
+        },
+        {
+          id: 9,
+          question: 'Shoulder',
+          answer: "Paku'ivi",
         },
       ],
     },
@@ -178,6 +188,73 @@ const flashcardData = {
           id: 7,
           question: 'Pleased to meet you',
           answer: "Mataora i te 'āravei 'iā koe",
+        },
+        {
+          id: 8,
+          question: 'Hello',
+          answer: 'Kia Oranā',
+        },
+        {
+          id: 9,
+          question: 'Goodbye',
+          answer: 'Ka Kitē',
+        },
+      ],
+    },
+    {
+      id: 5,
+      english: 'Helpful Phrases',
+      teReo: "Tēta'i Au Tuatua Tauturu",
+      cards: [
+        {
+          id: 1,
+          question: 'When is your birthday?',
+          answer: "'Ea'a tō'ou rā 'ānau'anga?",
+        },
+        {
+          id: 2,
+          question: 'It is on the ____ of ____',
+          answer: "'Ā te rā ____ 'ō ____",
+        },
+        {
+          id: 3,
+          question: 'What is the time?',
+          answer: "'Ea'a te ora?",
+        },
+        {
+          id: 4,
+          question: 'What day is it today?',
+          answer: "'Ea'a teia rā?",
+        },
+        {
+          id: 5,
+          question: 'Are you hungry?',
+          answer: 'Matepongi koe? Pongi koe?',
+        },
+        {
+          id: 6,
+          question: "Yes, I'm hungry",
+          answer: "'Āē, matepongi au",
+        },
+        {
+          id: 7,
+          question: 'Have you had enough food?',
+          answer: "Kua rava tā'au kai?",
+        },
+        {
+          id: 8,
+          question: 'Are you thristy?',
+          answer: 'Kakī vai koe?',
+        },
+        {
+          id: 9,
+          question: 'Yes, I am thristy',
+          answer: "Āē, kakī au 'i te vai. Ē kakī vai tōku.",
+        },
+        {
+          id: 10,
+          question: 'Thank you for cooking the food',
+          answer: "Meitaki nō te tunu 'i te kai",
         },
       ],
     },
