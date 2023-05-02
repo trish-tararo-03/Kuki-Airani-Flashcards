@@ -15,7 +15,7 @@ export default function Home() {
           Choose a topic to get started below!
         </p>
 
-        <div className="flex flex-row gap-4 p-2 items-center">
+        <div className="flex flex-col gap-4 p-2 items-center">
           <Link
             to="/months"
             className="bg-primary hover:bg-green text-secondary font-bold py-2 px-4 rounded"
