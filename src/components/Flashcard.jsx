@@ -5,7 +5,9 @@ const Flashcard = ({ id, question, answer, isFlipped, toggleFlip }) => {
   return (
     <Flipper flipKey={id}>
       <div
-        className="bg-blue-600 w-72 h-auto p-4 rounded-lg mb-4 sm:mb-2 md:mb-4 cursor-pointer "
+        className={`bg-primary w-72 h-auto p-4 rounded-lg mb-4 sm:mb-2 md:mb-4  cursor-pointer hover:text-green hover:scale-105 transition-all duration-300 ${
+          isFlipped ? 'bg-blue-800 transform-rotate-180' : ''
+        }`}
         onClick={toggleFlip}
       >
         <Flipped flipId="question">

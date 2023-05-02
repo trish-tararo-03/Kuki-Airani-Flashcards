@@ -11,7 +11,7 @@ const Navigation = () => {
               Kuki Cards
             </Link>
           </div>
-          <div className="flex space-x-4">
+          <div className="flex space-x-1 flex-wrap">
             <Link
               to="/months"
               className="text-secondary hover:bg-green px-3 py-2 rounded-md text-sm font-medium"
@@ -23,6 +23,20 @@ const Navigation = () => {
               className=" text-secondary hover:bg-green px-3 py-2 rounded-md text-sm font-medium"
             >
               Days of the Week
+            </Link>
+
+            <Link
+              to="/body-parts"
+              className="text-secondary hover:bg-green px-3 py-2 rounded-md text-sm font-medium"
+            >
+              Body Parts
+            </Link>
+
+            <Link
+              to="/meet-and-greet"
+              className="text-secondary hover:bg-green px-3 py-2 rounded-md text-sm font-medium"
+            >
+              Greetings
             </Link>
             {/* Add more navigation links as needed */}
           </div>

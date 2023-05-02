@@ -4,17 +4,16 @@ import flashcardData from '../data/flashcardData'
 import MonthsOfYear from './MonthsOfYear'
 import DaysOfWeek from './DaysOfWeek'
 import Navigation from './Navigation'
+import BodyParts from './BodyParts'
+import MeetAndGreet from './MeetAndGreet'
 import Home from './Home'
 
 const FlashcardList = () => {
   return (
     <Router>
-      {/* <div className="flex flex-col items-center mt-8">
-        <h2 className="text-2xl font-bold mb-4">Kuki Cards</h2>
-      </div> */}
-      <div>
+      <nav>
         <Navigation />
-      </div>
+      </nav>
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,10 +21,18 @@ const FlashcardList = () => {
           path="/months"
           element={<MonthsOfYear sections={flashcardData.sections} />}
         />
-
         <Route
           path="/days-of-week"
           element={<DaysOfWeek sections={flashcardData.sections} />}
+        />
+        <Route
+          path="/body-parts"
+          element={<BodyParts sections={flashcardData.sections} />}
+        />
+
+        <Route
+          path="/meet-and-greet"
+          element={<MeetAndGreet sections={flashcardData.sections} />}
         />
       </Routes>
     </Router>
