@@ -14,13 +14,13 @@ const Navigation = () => {
           <div className="flex space-x-4">
             <Link
               to="/months"
-              className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+              className="text-secondary hover:bg-green px-3 py-2 rounded-md text-sm font-medium"
             >
               Months
             </Link>
             <Link
               to="/days-of-week"
-              className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+              className=" text-secondary hover:bg-green px-3 py-2 rounded-md text-sm font-medium"
             >
               Days of the Week
             </Link>

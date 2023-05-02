@@ -9,10 +9,9 @@ import Home from './Home'
 const FlashcardList = () => {
   return (
     <Router>
-      <div className="flex flex-col items-center mt-8">
+      {/* <div className="flex flex-col items-center mt-8">
         <h2 className="text-2xl font-bold mb-4">Kuki Cards</h2>
-      </div>
-
+      </div> */}
       <div>
         <Navigation />
       </div>

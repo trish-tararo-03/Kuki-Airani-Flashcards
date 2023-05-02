@@ -5,7 +5,7 @@ const Flashcard = ({ id, question, answer, isFlipped, toggleFlip }) => {
   return (
     <Flipper flipKey={id}>
       <div
-        className="bg-blue-600 p-4 rounded-lg mb-4 sm:mb-2 md:mb-4 cursor-pointer"
+        className="bg-blue-600 w-72 h-auto p-4 rounded-lg mb-4 sm:mb-2 md:mb-4 cursor-pointer "
         onClick={toggleFlip}
       >
         <Flipped flipId="question">
@@ -15,7 +15,6 @@ const Flashcard = ({ id, question, answer, isFlipped, toggleFlip }) => {
             </h3>
           </div>
         </Flipped>
-
         <Flipped flipId="answer">
           <div className={`${isFlipped ? '' : 'hidden'}`}>
             <h3 className="text-center text-xl font-semibold mb-2">{answer}</h3>
