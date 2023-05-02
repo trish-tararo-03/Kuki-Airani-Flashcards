@@ -19,8 +19,12 @@ const MonthsOfTheYear = ({ sections }) => {
 
   return (
     <div>
-      <h2 className="text-center text-xl font-bold mb-4">{section.english}</h2>
-      <h2 className="text-xl text-center font-bold mb-4">{section.teReo}</h2>
+      <div className="border border-gray-200 p-2 bg-gray-200 bg-opacity-50 ">
+        <h2 className="text-center text-2xl font-bold mb-4">
+          {section.english}
+        </h2>
+        <h2 className="text-2xl text-center font-bold mb-4">{section.teReo}</h2>
+      </div>
       <div className="flex justify-center">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 place-items-center p-4 mx-4">
           {cards.map((card) => (

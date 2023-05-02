@@ -11,47 +11,16 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  color-scheme: dark;
-}
-/* Define the transition for the flip animation */
-.flip-card {
-  perspective: 1000px;
+  
 }
 
-/* Apply the flip effect */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.5s;
-  transform-style: preserve-3d;
+body {
+  background: linear-gradient(45deg, #fd746c, #ff9068, #ffab6d, #ffd271);
 }
 
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
+.card {
+  background: linear-gradient(to bottom right, #a3d2e2, #008c9e);  
 }
 
-.flip-card-front {
-  z-index: 2;
-  transform: rotateY(0deg);
-}
 
-.flip-card-back {
-  transform: rotateY(180deg);
-}
 
-/* Add styles for the front and back content */
-.flip-card-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
-}
-
-/* Customize the styles as per your needs */
